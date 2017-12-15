@@ -106,8 +106,15 @@ const App = () => (
         }}
       >
         <div>
-          <label>Employed?</label>
-          <Field name="employed" component="input" type="checkbox" />
+          <label>
+            <Field
+              name="employed"
+              component="input"
+              type="checkbox"
+              /> {' '}
+            Employed?
+          </label>
+
         </div>
         <div>
           <label>Toppings</label>
