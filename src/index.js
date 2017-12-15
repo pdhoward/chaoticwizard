@@ -28,14 +28,13 @@ const App = () => (
     <h1>Member Profile</h1>
     <h2>Registration</h2>
     <a href="https://github.com/erikras/react-final-form#-react-final-form">
-      Read Docs
+      Instructions
     </a>
     <p>
-      Notice the mixture of field-level and record-level (or <em>page-level</em>{' '}
-      in this case) validation.
+      Key fields are validated by the wizard
     </p>
     <Wizard
-      initialValues={{ employed: true, stooge: 'larry' }}
+      initialValues={{ subscribe: true, cell: 'unknown' }}
       onSubmit={onSubmit}
     >
       <Wizard.Page>
@@ -132,29 +131,38 @@ const App = () => (
         }}
       >
         <div>
-          <label>Best Stooge?</label>
+          <label>Ministry?</label>
           <div>
             <label>
               <Field
-                name="stooge"
+                name="minstry"
                 component="input"
                 type="radio"
-                value="larry"
+                value="Guest services"
               />{' '}
-              Larry
+              Guest Services
             </label>
             <label>
-              <Field name="stooge" component="input" type="radio" value="moe" />{' '}
-              Moe
+              <Field name="ministry" component="input" type="radio" value="Prayer" />{' '}
+              Prayer
             </label>
             <label>
               <Field
-                name="stooge"
+                name="minstry"
                 component="input"
                 type="radio"
-                value="curly"
+                value="Worship"
               />{' '}
-              Curly
+              Worship
+            </label>
+            <label>
+              <Field
+                name="minstry"
+                component="input"
+                type="radio"
+                value="Setup"
+              />{' '}
+              Setup
             </label>
           </div>
         </div>
